@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Agence de Voyage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a573355872.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style_voyage.css">
 </head>
 
 <body>
     <header>
+        <div id="Accueil"></div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <img src="https://img.magnific.com/vecteurs-libre/logo-voyage-detaille_23-2148616611.jpg" alt="Logo"
@@ -25,23 +27,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="#Accueil">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destinations</a>
+                            <a class="nav-link" href="#Destinations">Destinations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Circuit</a>
+                            <a class="nav-link" href="#Voyages">Voyages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Contact</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <section class="hero">
-            <div class="text-center text-white">
+            <div class="text-center text-Bold text-blue">
                 <h1>Bienvenue à notre agence de voyage</h1>
                 <p>Découvrez nos destinations exceptionnelles et nos circuits inoubliables.</p>
             </div>
@@ -52,7 +54,7 @@
     </header>
 
     <main class="container my-5">
-        <section class="Destinations">
+        <section id="Destinations">
             <div class="text-center mb-4">
                 <h2 class="titre">Nos Destinations</h2>
             </div>
@@ -96,7 +98,7 @@
                 </div>
             </div>
         </section>
-        <section class="Voyages my-5">
+        <section id="Voyages" class="Voyages my-5">
             <div class="text-center mb-4">
                 <h2 class="titre">Nos Voyages</h2>
             </div>
@@ -105,28 +107,36 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            <h5>Patrimoine & Mer</h5>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion
-                            body.</div>
+                        <div class="accordion-body">L'aventure commence à quelques kilomètres d'Abidjan, là où le temps
+                            semble s'être suspendu entre les façades coloniales de Grand-Bassam. On flâne sur les
+                            ruelles ombragées de la ville historique, classée au patrimoine mondial de l'Unesco, en
+                            laissant les vieilles maisons aux volets bleus raconter l'histoire du premier comptoir de la
+                            côte. Le lendemain, une pirogue glisse silencieusement entre les bras de lagune vers
+                            Assinie, où la forêt de cocotiers plonge ses pieds dans l'Océan Atlantique. Ici, le temps se
+                            mesure au rythme des vagues et à la couleur du coucher de soleil.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                            <h5>Nature & Culture</h5>
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion
-                            body. Let’s imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">À l'ouest du pays, là où la Côte d'Ivoire se plisse en collines
+                            vertes, le pays Dan ouvre ses bras à qui ose s'y aventurer. La montagne de Man, surnommée la
+                            « Suisse africaine », révèle des cascades qui dévalent les roches grises couvertes de
+                            mousse. On monte jusqu'au sommet du Mont Tonkoui pour voir le pays tout entier se déployer
+                            sous la brume matinale. En bas, dans les villages, les masques sacrés des Dan gardent des
+                            siècles de mémoire vivante — les griots chantent et les femmes tressent le raphia au son des
+                            tam-tams. Un voyage qui touche à l'essentiel.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -134,22 +144,24 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            Accordion Item #3
+                            <h5>Découverte & Faune</h5>
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion
-                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                            space to make it look, at least at first glance, a bit more representative of how this would
-                            look in a real-world application.</div>
+                        <div class="accordion-body">Au centre du pays, la Basilique Notre-Dame de la Paix émerge de la
+                            savane comme un rêve de marbre blanc — la plus grande église du monde trône là, silencieuse
+                            et grandiose, entre les lacs aux crocodiles sacrés. La route vers le nord traverse un
+                            paysage qui s'étire et s'assèche, jusqu'aux peintures rupestres senoufo de Korhogo et aux
+                            ateliers de tisserands aux couleurs vives. Le clou du voyage : une aurore au Parc National
+                            de la Comoé, où les éléphants traversent la rivière dans la lumière dorée. La grande
+                            Afrique, celle des films, en vrai.</div>
                     </div>
                 </div>
             </div>
 
         </section>
-        <section class="Contact my-5">
+        <section id="Contact" class="Contact my-5">
             <div class="text-center mb-4">
                 <h2 class="titre">Contactez-nous</h2>
             </div>
@@ -188,22 +200,22 @@
 
             <!-- Right -->
             <div>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.facebook.com/" class="me-4 text-reset">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://x.com/" class="me-4 text-reset">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.google.com/" class="me-4 text-reset">
                     <i class="fab fa-google"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.instagram.com/" class="me-4 text-reset">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.linkedin.com/" class="me-4 text-reset">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="https://www.github.com/" class="me-4 text-reset">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -235,16 +247,16 @@
                             Liens rapides
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Accueil</a>
+                            <a href="#Accueil" class="text-reset">Accueil</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Destinations</a>
+                            <a href="#Destinations" class="text-reset">Destinations</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Voyages</a>
+                            <a href="#Voyages" class="text-reset">Voyages</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Contact</a>
+                            <a href="#Contact" class="text-reset">Contact</a>
                         </p>
 
                     </div>
@@ -257,16 +269,10 @@
                             Liens utiles
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Tarification</a>
+                            <a href="#Destinations" class="text-reset">Réservation</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
+                            <a href="#Contact" class="text-reset">Aide</a>
                         </p>
                     </div>
                     <!-- Grid column -->
